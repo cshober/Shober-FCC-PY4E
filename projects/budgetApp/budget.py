@@ -5,6 +5,7 @@ class Category:
         self.ledger = []
         self.amount = 0.0
         self.name = name
+        print('weiner')
 
     def __str__(self):
         title = f"{self.name:*^30}\n"
