@@ -1,6 +1,5 @@
 import copy
 import random
-# Consider using the modules imported above.
 
 class Hat:
   def __init__(self,**allItem):
@@ -10,13 +9,13 @@ class Hat:
           self.contents.append(key)
   
   def draw(self,amount):
-      draw_list = []
+      drawList = []
       if amount >= len(self.contents):
           return self.contents
       for i in range(amount):
           name = self.contents.pop(random.randrange(len(self.contents)))
-          draw_list.append(name)
-      return draw_list
+          drawList.append(name)
+      return drawList
 
 
 # Function to get the probability
