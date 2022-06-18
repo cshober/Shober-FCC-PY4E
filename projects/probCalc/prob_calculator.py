@@ -3,9 +3,9 @@ import random
 # Consider using the modules imported above.
 
 class Hat:
-  def __init__(self,**all_item):
+  def __init__(self,**allItem):
     self.contents=[]
-    for key,value in all_item.items():
+    for key,value in allItem.items():
         for x in range(value):
           self.contents.append(key)
   
@@ -14,7 +14,7 @@ class Hat:
       if amount >= len(self.contents):
           return self.contents
       for i in range(amount):
-          name=self.contents.pop(random.randrange(len(self.contents)_)
+          name = self.contents.pop(random.randrange(len(self.contents)))
           draw_list.append(name)
       return draw_list
 
