@@ -1,0 +1,3 @@
+https://www.py4e.com/lessons - what each name correlates to in the textbook
+
+- handle is a REFERENCE to a file being opened, not the actual file

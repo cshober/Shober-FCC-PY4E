@@ -1,0 +1,6 @@
+WARNING - This dataset is > 1 GB
+# Do not just point the program at gmane.org and let it run
+# There is no rate limit
+
+Use this for testing:
+# http://mbox.dr-chuck.net/sakai.devel/4/5
