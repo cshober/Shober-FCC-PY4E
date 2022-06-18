@@ -1,11 +1,13 @@
 class Rectangle:
-    #howdy
     height = 0
     width = 0
 
     def __init__(self,w,h):
         self.height = h
         self.width = w
+
+    def __str__(self):
+        return f'Rectangle(width={self.width}, height={self.height})'
 
     def set_height(self,h):
         self.height = h
@@ -46,11 +48,15 @@ class Rectangle:
                 hCounter += 1
         return picture
     
-    # def get_amount_inside(self):
+    def get_amount_inside(self, shape):
+        return self.get_area() // shape.get_area()
 
 class Square(Rectangle):
     def __init__(self, s):
         super().__init__(s, s)
+    
+    def __str__(self):
+        return f'Square(side={self.width})'
 
     def set_side(self, s):
         self.set_height(s)
